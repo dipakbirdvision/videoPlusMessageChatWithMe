@@ -1,12 +1,12 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid');
 
-const myPeer = new Peer(undefined, {
-  host: '/',
-  port: '3001'
-})
+// const myPeer = new Peer(undefined, {
+//   host: '/',
+//   port: '3001'
+// })
 
-// const myPeer = new Peer({host: 'peerjsforchatwithdipak.herokuapp.com', secure: true, path: '/peerapp'})
+const myPeer = new Peer({host: 'peerjsforchatwithdipak.herokuapp.com', secure: true, path: '/peerapp'})
 
 
 function joinChat(){
