@@ -6,8 +6,7 @@ const videoGrid = document.getElementById('video-grid');
 //   port: '3001'
 // })
 
-const myPeer = new Peer({host: 'peerjsforchatwithdipak.herokuapp.com', secure: true, path: '/peerapp'})
-
+const myPeer = new Peer({host: 'peerjsforchatwithdipak.herokuapp.com', secure: true, port:443})
 
 function joinChat(){
   window.location = "/joinChat";
